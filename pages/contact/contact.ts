@@ -17,7 +17,6 @@ export class ContactPage {
 
   calculateIWC() {
     this.calcNum = ((this.feetHeight-5)*12)+this.inchesHeight;
-    
     if (this.gender = "m") {
       if (this.feetHeight <= 5){
         this.resultRobinson = 52.0;
