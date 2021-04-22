@@ -22,6 +22,13 @@
       <ion-option value="f">Female</ion-option>
     </ion-select>
   </ion-item>
+  <ion-item>
+    <ion-label id="label"> Accuracy </ion-label>
+    <ion-select interface="popover" [(ngModel)]="deci" required>
+      <ion-option value= 0>Whole Numbers</ion-option>
+      <ion-option value= 2>With Decimals</ion-option>
+    </ion-select>
+  </ion-item>
 
   <button ion-button (click)="calculateIWC()">Submit</button>
   <ion-card *ngIf="calcNum">
