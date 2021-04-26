@@ -18,7 +18,9 @@ export class ContactPage {
   
   calculateIWC() {
     this.calcNum = ((this.feetHeight - 5) * 12) + this.inchesHeight;
-    if ((this.gender = "m")) {
+    if ((this.feetHeight<5)){
+        
+    }else if ((this.gender = "m")) {
       if (this.feetHeight < 5) {
         this.resultRobinson = 52.0;
         this.resultMiller = 56.2;
@@ -34,7 +36,7 @@ export class ContactPage {
         //Devine formula: 50.0 kg + 2.3 kg per every inch over 5 feet
         this.resultDevine = 50.0 + (2.3 * this.calcNum);
       }
-    } else if ((this.gender = "f")) {
+    }else if ((this.gender = "f")) {
       if (this.feetHeight <= 5) {
         this.resultRobinson = 49.0;
         this.resultMiller = 53.1;
