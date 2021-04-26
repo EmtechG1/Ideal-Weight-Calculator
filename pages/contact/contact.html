@@ -20,37 +20,40 @@
         </ion-item>
       </ion-col>
     </ion-row>
-
     <ion-row>
-
+      <ion-col col-6>
+      <ion-list radio-group [(ngModel)]="gender">
+        <ion-list-header>
+          <h1> Sex </h1>
+        </ion-list-header>
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio value="m"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio value="f"></ion-radio>
+      </ion-item>
+    </ion-list>
+    </ion-col>
+    <ion-col col-6>
+      <ion-list radio-group [(ngModel)]="deci">
+        <ion-list-header>
+          <h1> Accuracy </h1>
+        </ion-list-header>
+          <ion-item>
+            <ion-label>Whole Numbers</ion-label>
+            <ion-radio value="0"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>With Decimals</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+      </ion-list>
+      </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-list radio-group [(ngModel)]="gender">
-    <ion-list-header>
-      <h1> Sex </h1>
-    </ion-list-header>
-    <ion-item>
-      <ion-label>Male</ion-label>
-      <ion-radio value="m"></ion-radio>
-    </ion-item>
-    <ion-item>
-      <ion-label>Female</ion-label>
-      <ion-radio value="f"></ion-radio>
-    </ion-item>
-  </ion-list>
-  <ion-list radio-group [(ngModel)]="deci">
-    <ion-list-header>
-      <h1> Accuracy </h1>
-    </ion-list-header>
-    <ion-item>
-      <ion-label>Whole Numbers</ion-label>
-      <ion-radio value="0"></ion-radio>
-    </ion-item>
-    <ion-item>
-      <ion-label>With Decimals</ion-label>
-      <ion-radio value="2"></ion-radio>
-    </ion-item>
-  </ion-list>
+  
 
   <button ion-button (click)="calculateIWC()">Submit</button>
   <ion-card *ngIf="calcNum">
