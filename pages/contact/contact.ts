@@ -14,13 +14,13 @@ export class ContactPage {
   resultHamwi: number;
   resultDevine: number;
   gender: string;
-  deci: number;
+  tooLow: string;
   
   calculateIWC() {
-    this.calcNum = ((this.feetHeight - 5) * 12) + this.inchesHeight;
     if ((this.feetHeight<5)){
-        
+      this.tooLow = "The calculations are only accurate for those who are at least 5 ft tall.";
     }else if ((this.gender = "m")) {
+       this.calcNum = ((this.feetHeight - 5) * 12) + this.inchesHeight;
       if (this.feetHeight < 5) {
         this.resultRobinson = 52.0;
         this.resultMiller = 56.2;
@@ -37,6 +37,7 @@ export class ContactPage {
         this.resultDevine = 50.0 + (2.3 * this.calcNum);
       }
     }else if ((this.gender = "f")) {
+       this.calcNum = ((this.feetHeight - 5) * 12) + this.inchesHeight;
       if (this.feetHeight <= 5) {
         this.resultRobinson = 49.0;
         this.resultMiller = 53.1;

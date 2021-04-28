@@ -21,19 +21,26 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-list radio-group [(ngModel)]="gender">
-        <ion-list-header>
-          <h1> Sex </h1>
-        </ion-list-header>
-      <ion-item>
-        <ion-label>Male</ion-label>
-        <ion-radio value="m"></ion-radio>
+      <ion-item *ngIf="tooLow">
+        <h3><code> ({{tooLow}}) </code> </h3>
       </ion-item>
-      <ion-item>
-        <ion-label>Female</ion-label>
-        <ion-radio value="f"></ion-radio>
-      </ion-item>
-    </ion-list>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list radio-group [(ngModel)]="gender">
+          <ion-list-header>
+            <h1> Sex </h1>
+          </ion-list-header>
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="m"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="f"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-col>
     </ion-row>
     <ion-row>
       
