@@ -42,7 +42,7 @@ export class ContactPage {
         this.resultHamwi = parseFloat(this.resultHamwi.toFixed(2));
         this.tooLow = `m${this.calcNum}`;
     }else if (this.gender = "f") {
-      this.calcNum =parseInt(this.inchesHeight) + (this.feetConvert - this.subtract) ;
+        this.calcNum =parseInt(this.inchesHeight) + (this.feetConvert - this.subtract) ;
         //Miller formula: 53.1 kg + 1.36 kg per every inch over 5 feet
         this.resultMiller = 53.1 + (1.36 * this.calcNum);
         this.resultMiller = parseFloat(this.resultMiller.toFixed(2));
@@ -56,6 +56,8 @@ export class ContactPage {
         this.resultHamwi = 45.5 + (2.2 * this.calcNum);
         this.resultHamwi = parseFloat(this.resultHamwi.toFixed(2));
         this.tooLow = `f${this.calcNum}`;
+    } else{
+      this.tooLow = "Error";
     }
   }
   constructor(public navCtrl: NavController) {}
