@@ -1,5 +1,6 @@
 ion-content{
   font-family: 'Mukta', sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +9,41 @@ ion-content{
 h1{
   text-align: center;
   font-family: 'Luckiest Guy', cursive;
+  margin-top:0;
+}
+h1:nth-of-type(1){
+  font-size: 3em;
+  color: #AF6615;
+}
+h1:nth-of-type(2){
+  font-size: 2em;
+  color: rgb(14, 126, 126);
 }
 p{
   margin-bottom: 15px;
+  color: #AF6615;
+  font-size: 1.2em;
+  text-align: justify;
 }
+p:nth-last-of-type(1){
+   color: #AF6615;
+   text-align: center;
+}
+.bold{
+  font-weight: 500;
+  text-align: center;
+}
+a{
+  color: #AF6615;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+}
+#card{
+  background-color: #00a2ff;
+}
+
