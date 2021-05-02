@@ -56,5 +56,12 @@ h3{
 i{
   margin-right: 4px;
 }
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+}
 
 
