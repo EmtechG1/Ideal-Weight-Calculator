@@ -1,0 +1,7 @@
+ion-content{
+  font-family: 'Mukta', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b6ff;
+}
