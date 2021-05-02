@@ -30,14 +30,20 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-item id="select">
-          <ion-label class="label"> Gender: </ion-label>
-          <ion-select required interface="popover" [(ngModel)]="gender">
-            <ion-option value="m">Male</ion-option>
-            <ion-option value="f">Female</ion-option>
-            </ion-select>
-        </ion-item>
+      <ion-col class="col">
+        <ion-list radio-group>
+          <ion-list-header id="header">
+            Gender:
+          </ion-list-header>
+          <ion-item id="select">
+            <ion-label>Male</ion-label>
+            <ion-radio value="m"></ion-radio>
+          </ion-item>
+          <ion-item id="select">
+            <ion-label>Female</ion-label>
+            <ion-radio value="f"></ion-radio>
+          </ion-item>
+        </ion-list>
     </ion-col>
     </ion-row>
   </ion-grid>
@@ -46,9 +52,6 @@
   
   <button id="button"ion-button (click)="calculateIWC()"><i><img src="https://stackblitz.com/files/ionic-pzz43w/github/EmtechG1/Ideal-Weight-Calculator/master/pages/contact/cookie_Icon.png" alt=""></i>Submit</button>
   <ion-card *ngIf="calcNum">
-    <ion-card-header>
-      Ideal Weight Calculator
-    </ion-card-header>
     <ion-card-content>
       <ion-grid>
         <ion-row>

@@ -46,5 +46,12 @@ h3{
   color: #AF6615;
   text-align: center;
 }
+.col #header{
+  color:#AF6615;
+  background: #17dcff;
+  margin: 0;
+  border: 0;
+  font-size: 2em;
+}
 
 
