@@ -10,12 +10,18 @@
   <ion-card class="Card">
   <ion-card-content>
     <ion-grid>
-    <ion-row>
-      <ion-col col-6>
-          <ion-input id="input" type="number" [(ngModel)]="feetHeight" required placeholder="Height in Feet"></ion-input>
+    <ion-row id="row">
+      <ion-col class="col" col-6>
+        <ion-item id="input">
+          <ion-label inline>Height In Feet</ion-label>
+          <ion-input type="number" [(ngModel)]="feetHeight" required></ion-input>
+        </ion-item>
       </ion-col>
-      <ion-col col-6>
-          <ion-input id="input" type="number" [(ngModel)]="inchesHeight" required placeholder="Height in Inches"></ion-input>
+      <ion-col class="col" col-6>
+        <ion-item id="input">
+          <ion-label inline>Height In Inches</ion-label>
+          <ion-input type="number" [(ngModel)]="inchesHeight" required></ion-input>
+        </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -25,20 +31,13 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-list class="radio" radio-group [(ngModel)]="gender">
-          <ion-list-header class="head">
-            <h1> Sex </h1>
-          </ion-list-header>
-          <ion-item class="picker">
-            <ion-label class="label">Male</ion-label>
-            <ion-radio value="m"></ion-radio>
-          </ion-item>
-          <ion-item class="picker">
-            <ion-label class="label">Female</ion-label>
-            <ion-radio value="f"></ion-radio>
-          </ion-item>
-          
-      </ion-list>
+        <ion-item id="select">
+          <ion-label class="label"> Gender: </ion-label>
+          <ion-select interface="popover" [(ngModel)]="gender">
+            <ion-option value="m">Male</ion-option>
+            <ion-option value="f">Female</ion-option>
+            </ion-select>
+        </ion-item>
     </ion-col>
     </ion-row>
   </ion-grid>

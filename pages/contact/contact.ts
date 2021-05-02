@@ -20,7 +20,7 @@ export class ContactPage {
   calculateIWC() {
     if ((this.feetHeight<5)){
       this.tooLow = "The calculations are only accurate for those who are at least 5 ft tall.";
-    }else if ((this.feetHeight>8)){
+    }else if ((this.feetHeight>7)){
       this.tooLow = "Are you sure? The tallest person in the world, Robert Wadlow, is 8 feet and 11.1 inches.";
     }else if ((this.gender = "m")) {
        this.calcNum = ((this.feetHeight - 5) * 12) + this.inchesHeight;

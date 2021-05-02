@@ -24,22 +24,23 @@ ion-content{
     transform: translateY(-0.25em);
     cursor: pointer;
 }
-.Card{
-  background: #AF6615;
+.card{
+background: #17dcff;
 }
-#input{
-  background: #17dcff;
-  padding: 0;
-  margin: 0;
+.col #input{
+background: #17dcff;
+border: 1px solid #AF6615;
 }
-.radio .head{
-    margin: 0;
-    background: #17dcff;
+.col #input ion-label{
+color: #AF6615;
+border: 0;
 }
-.radio .label{
+#select{
+  background:#17dcff;
+  border: 1px solid #AF6615;
+}
+#select .label{
   color: #AF6615;
 }
-.radio .picker{
-  background: #17dcff;
-}
+
 
