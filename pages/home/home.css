@@ -5,3 +5,7 @@ ion-content{
   justify-content: center;
   background-color: #00b6ff;
 }
+h1{
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+}
