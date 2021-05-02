@@ -1,0 +1,40 @@
+ion-content{
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b6ff;
+}
+#button{
+    background: none;
+    color: #AF6615;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.3s;
+    display: block;
+    margin: 15px auto;
+}
+#button:hover{
+    background: none;
+    border-color: #17dcff;
+    color: #AF6615;
+    box-shadow: 0 0.5em 0.5em -0.4rem  #27f2ee;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.Card{
+  background: #AF6615;
+}
+#input{
+  background: #17dcff;
+  padding: 0;
+}
+.radio.head{
+    margin: 0;
+    background: #17dcff;
+}
+.radio.label{
+  color: #17dcff;
+}
