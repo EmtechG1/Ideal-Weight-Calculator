@@ -56,8 +56,8 @@ export class ContactPage {
         this.resultHamwi = 45.5 + (2.2 * this.calcNum);
         this.resultHamwi = parseFloat(this.resultHamwi.toFixed(2));
         this.tooLow = `f${this.calcNum}`;
-    } else{
-      this.tooLow = "Error";
+    }else{
+      this.tooLow = "error";
     }
   }
   constructor(public navCtrl: NavController) {}
