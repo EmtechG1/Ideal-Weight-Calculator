@@ -118,6 +118,9 @@ i{
     margin-bottom: 0;
     margin-right: 7px;
   }
+  ion-card ion-row .result{
+    font-size: 1.4em;
+  }
 }
 @media (min-width: 1439px){
   ion-content{
@@ -143,6 +146,9 @@ i{
     height: 30px;
     margin-bottom: 0;
     margin-right: 7px;
+  }
+  ion-card ion-row .result{
+    font-size: 1.6em;
   }
 }
 
