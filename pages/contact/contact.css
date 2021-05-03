@@ -6,6 +6,19 @@ ion-content{
   justify-content: center;
   background-color: #00b6ff;
 }
+h1{
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  margin-top:0;
+}
+h1:nth-of-type(1){
+  font-size: 3em;
+  color: #AF6615;
+}
+h1:nth-of-type(2){
+  font-size: 2em;
+  color: rgb(14, 126, 126);
+}
 #button{
     background: none;
     color: #AF6615;
