@@ -89,11 +89,8 @@ i{
   #button{
       font-size: 0.9em;
   }
-  .col #input{
-    font-size: 0.7em;
-  }
-  #select .label{
-  font-size: 0.72em;
+  .col #input, #select .label, h3, #select .option{
+    font-size: 1em;
   }
 }
 @media (min-width: 1023px){
