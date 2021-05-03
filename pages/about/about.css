@@ -6,6 +6,9 @@ ion-content{
   justify-content: center;
   background-color: #00b6ff;
 }
+#header #navbar #title{
+  color: red;
+}
 h1{
   text-align: center;
   font-family: 'Luckiest Guy', cursive;
@@ -30,4 +33,53 @@ img{
   font-size: 1.4em;
   color: #AF6615;
   text-align: center;
+}
+.about, .about h2, .about p{
+  color: #AF6615;
+}
+.about h2, .about p{
+  font-size: 1.2em;
+}
+.about{
+  font-size: 1.1em;
+}
+.card, ion-col .card .about{
+  background: #17dcff
+}
+@media (min-width: 320px) and (max-width:426px){
+  ion-content{
+    font-size: 0.8em;
+  }
+  .about h2, .about p{
+  font-size: 1.1em;
+  }
+  .about{
+    font-size: 1em;
+  }
+}
+@media (min-width: 1023px){
+  ion-content{
+    font-size: 1.2em;
+  }
+  .about h2, .about p{
+  font-size: 1.4em;
+  }
+  .about{
+    font-size: 1.3em;
+  }
+}
+@media (min-width:1439px){
+  ion-content{
+    font-size: 1.4em;
+  }
+  .about h2, .about p{
+  font-size: 1.6em;
+  }
+  .about{
+    font-size: 1.5em;
+  }
+  #avatar #img{
+    width: 70px;
+    height: 70px;
+  }
 }

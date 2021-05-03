@@ -76,5 +76,76 @@ i{
   width: 50%;
   margin-bottom: 20px;
 }
-
+@media (min-width: 320px) and (max-width:426px){
+  ion-content{
+    font-size: 0.9em;
+  }
+    h1:nth-of-type(1){
+    font-size: 2.8em;
+  }
+  h1:nth-of-type(2){
+    font-size: 1.8em;
+  }
+  #button{
+      font-size: 0.9em;
+  }
+  .col #input{
+    font-size: 0.72em;
+  }
+  #select .label{
+  font-size: 0.72em;
+  }
+}
+@media (min-width: 1023px){
+  ion-content{
+    font-size: 1.3em;
+  }
+  h1:nth-of-type(1){
+    font-size: 3.2em;
+  }
+  h1:nth-of-type(2){
+    font-size: 2.2em;
+  }
+  #button{
+    font-size: 1.3em;
+  }
+  .col #input{
+    font-size: 1.4em;
+  }
+  #select .label{
+  font-size: 1.4em;
+  }
+  i img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0;
+    margin-right: 7px;
+  }
+}
+@media (min-width: 1439px){
+  ion-content{
+    font-size: 1.5em;
+  }
+  h1:nth-of-type(1){
+    font-size: 3.4em;
+  }
+  h1:nth-of-type(2){
+    font-size: 2.4em;
+  }
+  #button{
+    font-size: 1.5em;
+  }
+  .col #input{
+    font-size: 1.6em;
+  }
+  #select .label{
+  font-size: 1.6em;
+  }
+  i img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    margin-right: 7px;
+  }
+}
 

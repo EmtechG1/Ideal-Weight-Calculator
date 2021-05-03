@@ -50,5 +50,51 @@ img{
   margin-right: auto;
   width: 60%;
 }
-
+@media (min-width: 320px) and (max-width:426px){
+  #card{
+  width: 100%;
+  }
+    h1:nth-of-type(1){
+    font-size: 2.8em;
+    color: #AF6615;
+  }
+  h1:nth-of-type(2){
+    font-size: 1.8em;
+    color: rgb(14, 126, 126);
+  }
+  p{
+    margin-bottom: 15px;
+    color: #AF6615;
+    font-size: 1em;
+    text-align: justify;
+  }
+}
+@media (min-width: 1023px){
+  #card{
+  width: 50%;
+  }
+  h1:nth-of-type(1){
+    font-size: 3.2em;
+  }
+  h1:nth-of-type(2){
+    font-size: 2.2em;
+  }
+  p{
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1439px){
+  #card{
+  width: 50%;
+  }
+  h1:nth-of-type(1){
+    font-size: 3.4em;
+  }
+  h1:nth-of-type(2){
+    font-size: 2.4em;
+  }
+  p{
+    font-size: 1.6em;
+  }
+}
 
