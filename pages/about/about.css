@@ -39,9 +39,16 @@ img{
 }
 .about h2, .about p{
   font-size: 1.2em;
+  font-weight: 400;
 }
 .about{
   font-size: 1.1em;
+}
+.about div span{
+  font-weight: 500;
+}
+.about div{
+  margin-bottom: 5px;
 }
 .card, ion-col .card .about{
   background: #17dcff
